@@ -40,7 +40,7 @@ public class Utilidades
         primero = numero%10;
         while((septimo<8) && (sexto<8) && (quinto<8) && (cuarto<8) && (tercero<8) && (segundo<8) && (primero<8)){
             return true;
-        } 
+        }         
         return false;
     }
 
