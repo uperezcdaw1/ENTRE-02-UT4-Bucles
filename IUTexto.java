@@ -40,9 +40,30 @@ public class IUTexto
      */
     private void hacerSumasOctales()
     {
-        
-        
-
+        Scanner teclado = new Scanner(System.in);
+        Pantalla borrar = new Pantalla();
+        borrar.borrarPantalla();
+        Utilidades octales = new Utilidades();
+        char continuar;
+        do{
+            System.out.println("Inserte el primer número octal");
+            int octal1 = teclado.nextInt();        
+            System.out.println("Su número es... "+ octales.estaEnOctal(octal1));
+            while(octales.estaEnOctal(octal1) == false){
+                System.out.println("Inserte un número válido");
+                octal1 = teclado.nextInt();
+            }
+            System.out.println("Inserte el segundo número octal");
+            int octal2 = teclado.nextInt();
+            System.out.println("Su número es... "+ octales.estaEnOctal(octal2));
+            while(octales.estaEnOctal(octal2) == false){
+                System.out.println("Inserte un número válido");
+                octal2 = teclado.nextInt();
+            }
+            System.out.println("La suma de ambos números es " + calculadora.sumarEnOctal(octal1,octal2));
+            System.out.println("¿Desea repetir? Presione S o s");
+            continuar = teclado.next().charAt(0);            
+        }while( continuar == 'S' || continuar == 's');
     }
 
     /**
@@ -53,7 +74,8 @@ public class IUTexto
 
     private void dibujarFiguras()
     {
-        
+
     }
 
 }
+
