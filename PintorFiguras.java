@@ -43,7 +43,7 @@ public class PintorFiguras
      */
     private  void escribirEspacios(char caracter, int n) {
         caracter = ' ';
-        for (int j=n; j>1; j--) 
+        for (int j=0; j<n; j++) 
         { 
             System.out.print(caracter); 
         } 
