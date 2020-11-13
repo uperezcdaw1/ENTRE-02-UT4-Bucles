@@ -4,11 +4,14 @@ import java.util.Scanner;
  * @author - Unai Pérez
  */
 public class IUTexto
-{
+{   
+    //Atributos
+    //Variables
     private Scanner teclado;
     private CalculadoraOctal calculadora;
     private PintorFiguras pintor;
-
+    //Constantes
+    //métodos
     /**
      * Constructor  
      */

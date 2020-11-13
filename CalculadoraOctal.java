@@ -7,7 +7,7 @@
  */
 public class CalculadoraOctal
 {
-
+    //Métodos
     /**
      * sumar dos nºs supuestos en base 8 y con el mismo
      * nº de cifras

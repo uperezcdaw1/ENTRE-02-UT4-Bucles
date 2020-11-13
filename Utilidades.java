@@ -7,7 +7,7 @@ import java.util.Scanner;
  */
 public class Utilidades
 {
-
+    //Métodos
     /**
      * Dado un número n (asumimos positivo)
      * devueve true si está en octal false en otro caso
@@ -17,6 +17,7 @@ public class Utilidades
      * (usa bucles while)
      */
     public static boolean estaEnOctal(int n) { 
+        //Variables para obtener los dígitos, he supuesto que no habrían números mayores de 7 dígitos.
         int numero = n;
         int septimo;
         int sexto;
@@ -51,6 +52,7 @@ public class Utilidades
      * (usa bucles while)
      */
     public static int contarCifras(int n) {
+        //Variables para saber cuantos dígitos tiene nuestro número
         int digitos = 0;
 
         while(n != 0)
