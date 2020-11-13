@@ -34,7 +34,6 @@ public class CalculadoraOctal
             resultado += suma * (int)(Math.pow(10, llevadas));
             llevadas++;
         }
-
         resultado = resultado + unidadExtra * division;
         return resultado;
     }
