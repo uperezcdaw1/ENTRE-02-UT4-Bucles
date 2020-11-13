@@ -21,6 +21,7 @@ public class PintorFiguras
     public  void dibujarFigura(int altura) {
 
         for(int i=1;i<=altura;i++){
+            escribirEspacios(' ',2);
             for(int j=1;j<(int)(altura/2)+i;j++){
                 System.out.print(" ");
             }
